@@ -35,8 +35,11 @@
        
        <p></p>
        
-       <h2>入力フォーム</h2>
+       
        <form method="post" action="insert.php">
+          
+           <p>入力フォーム</p>
+          
            <div>
                <label>ハンドルネーム</label>
                <br>
@@ -52,7 +55,7 @@
            <div>
                 <label>コメント</label>
                 <br>
-                <textarea cols="35" rows="7" name="comments">
+                <textarea cols="70" rows="7" name="comments">
                 </textarea>
            </div>
            
@@ -124,7 +127,10 @@
     
     </main>
     
-    
+    <footer>
+        copyright © internous|4each blog the which provides A to Z about programming.
+    </footer>
+    <p></p>
     
 </body>    
     
