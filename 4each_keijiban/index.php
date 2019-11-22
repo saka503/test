@@ -13,6 +13,15 @@
    
    
 <body>
+  
+  <?php
+  
+  mb_internal_encoding("utf8");
+  $pdo = new PDO("mysql:dbname=lesson1;host=localhost;","root","mysql");
+  $stmt = $pdo->query("select * from 4each_keijiban");
+  
+  ?>
+  
    <header>
         <ul class="menu">
            
@@ -65,35 +74,24 @@
            
                       
         </form>
+         
+          <?php 
+          
+          while ($row = $stmt->fetch()){
            
+           echo"<div class='kiji'>";
+           echo"<h3>".$row['title']."</h3>";
+           echo"<div class='contents'>";
+           echo $row['comments'];
+           echo"<div class='handlename'>posted by".$row['handlename']."</div>";
+           echo"</div>";    
+           echo"</div>";
+           }
            
+           ?>
            
-           <div class="kiji">
-               <h3>タイトル</h3>
-               <div class="contents">
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   <div class='handlename'>posted by 通りすがり</div>
-               </div>
-               
-               
-           </div>
-           
-           
-           <div class="kiji">
-               <h3>タイトル</h3>
-               <div class="contents">
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。記事の中身。<br>
-                   <div class='handlename'>posted by 通りすがり</div>
-               </div>
-               
-               
            </div>
        
-       </div>
        
        
        <div class="right">
