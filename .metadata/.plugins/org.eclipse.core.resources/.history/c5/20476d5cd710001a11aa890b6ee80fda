@@ -1,0 +1,18 @@
+
+public class Android {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		smartPhone Android = new smartPhone();
+		Android.play();
+		Android.stop();
+		Android.next();
+		Android.back();
+		Android.call();
+		Android.mail();
+		Android.photo();
+		Android.internet();
+
+	}
+
+}

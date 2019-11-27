@@ -1,0 +1,72 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+Person taro = new Person();
+taro.name="山田太郎";
+taro.age=20;
+taro.phoneNumber="012-3456-7890";
+taro.address="abc-123";
+
+System.out.println(taro.name);
+System.out.println(taro.age);
+System.out.println(taro.phoneNumber);
+System.out.println(taro.address);
+taro.talk();
+taro.walk();
+taro.run();
+
+
+Person jiro = new Person();
+jiro.name="木村次郎";
+jiro.age=18;
+jiro.phoneNumber="123-4567-8901";
+jiro.address="def-123";
+
+System.out.println(jiro.name);
+System.out.println(jiro.age);
+System.out.println(jiro.phoneNumber);
+System.out.println(jiro.address);
+jiro.talk();
+jiro.walk();
+jiro.run();
+
+
+Person hanako = new Person();
+hanako.name="鈴木花子";
+hanako.age=16;
+hanako.phoneNumber="234-5678-9012";
+hanako.address="ghi-123";
+
+System.out.println(hanako.name);
+System.out.println(hanako.age);
+System.out.println(hanako.phoneNumber);
+System.out.println(hanako.address);
+hanako.talk();
+hanako.walk();
+hanako.run();
+
+Person yu = new Person();
+yu.name="阪本雄";
+yu.age=27;
+yu.phoneNumber="345-6789-0123";
+yu.address="jkl-123";
+
+System.out.println(yu.name);
+System.out.println(yu.age);
+System.out.println(yu.phoneNumber);
+System.out.println(yu.address);
+yu.talk();
+yu.walk();
+yu.run();
+
+
+Robot aibo = new Robot();
+aibo.name="aibo";
+aibo.talk();
+aibo.walk();
+aibo.run();
+
+	}
+
+	}
